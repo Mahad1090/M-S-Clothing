@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form - M&S Clothing</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to customer-form.html go here */
+        body {
+            font-family: 'Forte', cursive; /* Changed font to Forte */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .form-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        .order-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .order-button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with brand logo and name -->
+    <div class="header">
+        <div class="brand-logo">
+            <img src="logo.png" alt="Brand Logo">
+        </div>
+        M & S (Mahad & Shayan's) Clothing
+    </div>
+
+    <!-- Customer information form -->
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <br><br>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="paypal">Online Banking</option>
+            </select>
+
+            <button type="button" class="order-button" onclick="placeOrder()">Place an Order</button>
+        </form>
+    </div>
+
+    <!-- Footer with contact details -->
+    <div class="footer">
+        <h2>Contact Information</h2>
+        <p>Address: Shop No: 60, First Floor, Giga Mall, Rawalpindi, Pakistan</p>
+        <p>Phone: +123456789</p>
+        <p>Email: m&sclothing@gmail.com</p>
+    </div>
+
+    <script>
+        // JavaScript function to handle the "Place an Order" button click
+        function placeOrder() {
+            // Add any logic or navigation code here
+            alert("Order Placed!");
+        }
+    </script>
+
+</body>
+</html>

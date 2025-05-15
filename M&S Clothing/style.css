@@ -1,0 +1,105 @@
+.main-heading, .sub-heading {
+    font-family: 'Forte', sans-serif;
+    color: #fff;
+  }
+  
+  .main-heading {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+  }
+  
+  .sub-heading {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(250, 248, 248, 0.2);
+  }
+.hero {
+    background-image: url('bg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative; /* Needed for positioning the logo */
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    background-image: url('logo.png'); /* Replace with your logo image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the logo */
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .forms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

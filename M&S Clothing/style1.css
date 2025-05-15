@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+  font-family: 'Forte', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Background color */
+}
+
+header {
+  background-color: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  max-width: 200px;
+  margin-right: 10px;
+  /* Add your logo as a background image */
+  /* Replace 'path/to/logo.png' with your actual logo */
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px; /* Adjust the height based on your logo */
+  width: 200px; /* Adjust the width based on your logo */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand-name {
+  font-size: 2.5em;
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust the alignment of items */
+  padding: 20px;
+}
+
+.item {
+  width: calc(33.33% - 45px); /* Set the width for three items */
+  padding: 20px;
+  margin-bottom: 20px; /* Adjust spacing between rows */
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.item p {
+  color: #ccc;
+}
+
+.product_detail {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product_detail:hover {
+  background-color: #6f7376;
+}
+
+.contact-info {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.go-to-cart {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-cart:hover {
+  background-color: #383838;
+}
